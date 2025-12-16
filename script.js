@@ -46,15 +46,15 @@ let outputTotal = "";
 for (let i = 0; i < teamMembers.length; i++) {
   const teamMember = teamMembers[i];
   outputTotal += `
-    < div class="team-card">
+    <div class="team-card">
       <div class="card-image">
-                    <img src="img/${teamMember.img}" alt="">
+        <img src="./${teamMember.img}" alt="">
       </div>
-              <div class="card-text">
-                    <h3>${teamMember.name} </h3>
-                    <p>${teamMember.role}</p>
-                    <p>${teamMember.email}</p>
-              </div>
+      <div class="card-text">
+        <h3>${teamMember.name} </h3>
+        <p>${teamMember.role}</p>
+        <p>${teamMember.email}</p>
+      </div>
     </div> `;
 }
 
