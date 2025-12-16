@@ -45,17 +45,17 @@ let outputTotal = "";
 
 for (let i = 0; i < teamMembers.length; i++) {
   const teamMember = teamMembers[i];
-  outputTotal += '
+  outputTotal += `
     < div class="team-card" >
       <div class="card-image">
-                    <img src="male1.png" alt="">
-                </div>
-                <div class="card-text">
-                    <h3>Marco Bianchi</h3>
-                    <p>designer</p>
-                    <p>marcobianchi@team.com</p>
-                </div>
-            </div > '  ;
+                    <img src=`img/${teamMember.img}` alt="">
+      </div>
+              <div class="card-text">
+                    <h3>`${teamMember.name}` </h3>
+                    <p>`${teamMember.role}`</p>
+                    <p>`${teamMember.email}`</p>
+              </div>
+    </div > ` ;
 }
 
 teamContainer.innerHTML = outputTotal
