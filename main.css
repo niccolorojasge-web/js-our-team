@@ -21,4 +21,9 @@
 .team-card {
     width: calc(100% / 3 - 20px);
     box-sizing: border-box;
+    display: flex;
+}
+.card-image {
+    padding-right: 10px;
+
 }
