@@ -36,3 +36,26 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+//const output = document.getElementById('team-list')
+const teamContainer = document.querySelector(".team-container");
+
+let outputTotal = "";
+
+
+for (let i = 0; i < teamMembers.length; i++) {
+  const teamMember = teamMembers[i];
+  outputTotal += '
+    < div class="team-card" >
+      <div class="card-image">
+                    <img src="male1.png" alt="">
+                </div>
+                <div class="card-text">
+                    <h3>Marco Bianchi</h3>
+                    <p>designer</p>
+                    <p>marcobianchi@team.com</p>
+                </div>
+            </div > '  ;
+}
+
+teamContainer.innerHTML = outputTotal

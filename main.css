@@ -1,0 +1,10 @@
+.title {
+    text-align: center;
+    color: blueviolet;
+}
+.text{
+    text-align: center;
+}
+.team-card {
+    display: flex;
+}
